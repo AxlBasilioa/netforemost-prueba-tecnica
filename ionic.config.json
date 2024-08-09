@@ -1,0 +1,7 @@
+{
+  "name": "netforemost",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
