@@ -35,3 +35,34 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+body {
+    --ion-background-color: var(--ion-color-light);
+    --ion-text-color: var(--ion-color-dark);
+}
+ion-toolbar {
+    --background: var(--ion-color-primary);
+    --color: var(--ion-color-primary-contrast);
+}
+ion-searchbar {
+--background: var(--ion-color-primary);
+--color: var(--ion-color-primary-contrast);
+}
+
+ion-segment {
+--background: var(--ion-color-secondary);
+--color: var(--ion-color-secondary-contrast);
+}
+
+ion-item {
+--background: var(--ion-color-light);
+--color: var(--ion-color-dark);
+}
+ion-item:hover{
+    --background: var(--ion-color-primary);
+    --color: var(--ion-color-primary-contrast);
+}
+
+ion-list{
+    --background: var(--ion-color-light);
+--color: var(--ion-color-dark);
+}

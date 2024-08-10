@@ -1,0 +1,19 @@
+ion-card {
+    text-align: justify;
+    img {
+      width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+      height: auto; /* Mantiene la proporción de la imagen */
+      max-height: 200px; /* Establece una altura máxima para reducir el espacio ocupado */
+      object-fit: cover; /* Ajusta la imagen para que cubra todo el área asignada sin distorsionarse */
+      border-radius: 8px; /* Opcional: agrega un borde redondeado a la imagen */
+    }
+  
+    ion-card-header {
+      text-align: center; /* Centra el texto en el encabezado del card */
+    }
+  
+    ion-card-content {
+      padding: 16px; /* Agrega un poco de padding al contenido para mejor presentación */
+    }
+  }
+  

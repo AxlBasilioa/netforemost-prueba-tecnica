@@ -1,0 +1,5 @@
+<div class="categories-container">
+  <div *ngFor="let category of list" class="category-item" (click)="selectCategory(category.strCategory)">
+    {{ category.strCategory }}
+  </div>
+</div>

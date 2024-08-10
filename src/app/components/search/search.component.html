@@ -1,0 +1,11 @@
+<div class="search-container">
+  <ion-searchbar [(ngModel)]="searchQuery" (ionInput)="onSearch()" placeholder="Buscar platillo"></ion-searchbar>
+  <div class="buttons-categories">
+    <app-category (categorySelected)="onCategorySelected($event)"></app-category>
+  </div>
+</div>
+
+<!-- Envuelve la lista en un contenedor scrolleable -->
+<div class="scrollable-list">
+  <app-meal-list [meals]="meals"></app-meal-list>
+</div>

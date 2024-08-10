@@ -1,0 +1,17 @@
+.categories-container {
+  display: flex;
+  overflow-x: auto;
+  max-width: 100%; /* Ajusta esto según el tamaño del contenedor padre */
+  white-space: nowrap; /* Evita que los elementos se vayan a la siguiente línea */
+}
+
+.category-item {
+  flex: 0 0 auto;
+  margin-right: 10px; /* Espacio entre los elementos */
+  padding: 10px 20px;
+  background-color: #d3b6a1;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}

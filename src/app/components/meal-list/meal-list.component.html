@@ -1,0 +1,11 @@
+<ion-list *ngIf="meals && meals.length > 0">
+  <ion-item *ngFor="let meal of meals" (click)="openMealDetail(meal)">
+    <ion-thumbnail slot="start">
+      <img [src]="meal.strMealThumb" alt="{{ meal.strMeal }}">
+    </ion-thumbnail>
+    <ion-label>
+      <h2>{{ meal.strMeal }}</h2>
+      <p>{{ meal.strArea }} - {{ meal.strCategory }}</p>
+    </ion-label>
+  </ion-item>
+</ion-list>

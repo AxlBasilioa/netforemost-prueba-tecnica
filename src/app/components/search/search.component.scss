@@ -1,0 +1,32 @@
+ion-searchbar {
+    --background: var(--ion-color-primary);
+    --color: var(--ion-color-primary-contrast);
+  }
+  :host {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+  }
+  
+  ion-searchbar {
+    top:10vh;
+    flex: 0 0 auto; /* Asegura que el searchbar no se redimensione */
+    z-index: 10; /* Mantén el searchbar en la parte superior */
+    flex: 0 0 auto; /* Mantiene el searchbar fijo en su tamaño */
+    z-index: 10; /* Asegura que se mantenga visible */
+    position: sticky; /* Mantiene el searchbar en la parte superior */
+    top: 0; /* Alinea el searchbar con la parte superior */
+  }
+  
+  .scrollable-list {
+    top:20vh;
+    flex: 1; /* Ocupa el resto del espacio disponible */
+    overflow-y: auto; /* Permite que la lista sea scrolleable */
+    padding: 10px; /* Añadir un pequeño padding si es necesario */
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  ::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari */
+  }
+  }
